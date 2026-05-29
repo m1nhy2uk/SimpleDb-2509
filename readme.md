@@ -43,3 +43,16 @@ src/
 - [x] t017 - 멀티스레딩
 - [x] t018 - rollback
 - [x] t019 - commit
+
+### 💡 배운 점
+
+- `ThreadLocal`로 스레드별 커넥션을 독립적으로 관리하는 방법
+- `PreparedStatement`로 SQL 인젝션 없이 파라미터 바인딩하는 방법
+- 리플렉션으로 ResultSet → DTO 자동 매핑하는 방법
+- 메서드 체이닝을 위해 `return this` 패턴 사용
+
+### 🤔 어려웠던 점
+
+- `ThreadLocal` 개념 이해 (스레드별로 독립적인 값을 가진다는 것)
+- `insert()`와 `update()`의 차이 (`RETURN_GENERATED_KEYS`, `getGeneratedKeys()`)
+- `appendIn()`에서 `?` 하나를 값 개수만큼 동적으로 확장해야 한다는 것
